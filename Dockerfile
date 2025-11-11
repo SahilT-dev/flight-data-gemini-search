@@ -17,10 +17,10 @@ RUN uv sync --frozen --no-cache
 COPY server.py ./
 
 # Expose port
-EXPOSE 8080
+EXPOSE 8002
 
 # Set environment variable for Cloud Run
-ENV PORT=8080
+ENV PORT=8002
 
 # Run the application
 CMD ["uv", "run", "server.py"]
